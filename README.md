@@ -1,12 +1,23 @@
-# CSS Week3 2-day SASS Project
+# CSS Week3 Solo SASS Project
 
-### A 2-day project that involves wireframing 2-3 layouts for a website, followed by in-depth planning of SASS utilization.
+### Building on a 2-day project this week, this is an alternate version of the dog magazine site. I'm using the same SASS tools created previously but implementing them in a new layout.
 
-#### By _Nathan Barrett_ and _Cat Janowitz_
+#### By _Cat Janowitz_
 
 ## Description
 
-We will design an online magazine by dogs for dogs.
+Doge-sit is an online magazine by dogs for dogs. This is version 2
+
+## Thoughts and Feedback
+
+This week I learned about SASS as a compiling tool that streamlines CSS design.  Using the 7-1 approach I practiced making folders of partials that contain modular rules, or chunks of rules, for every part of the website. SASS, operating under an import directive, "watches" and compiles all SASS-CSS (scss) code into a final output css file. The idea is to be able to re-use partials to build other sites. The efficiency comes from making changes in one location (partial files) rather than throughout the css code.
+
+Some of the practices that I found useful included using a mixin to create a DIY grid and other components of the site (i.e., a card) that contains a universal list of style rules for that particular component. I used variables heavily (for color, card, intro, footer) with the idea in mind that I could re-use these variables for building other sites; it would be easy for me to change the style values in one place.
+
+During the 2-day project Nathan and I found it challenging to fully utilize breakpoint variables. When including the breakpoint variables with other mixins (i.e., the grid mixin) the site wouldn't behave as expected. My guess is there was an overriding rule that we didn't pinpoint. Instead of using breakpoint variables we simply included media queries in the partial of that component.
+
+I will change my approach today by checking for overriding rules when implementing mixins. I will follow the habit of my partner and use the inspector as much as I can since I feel I haven't used it as much as I could. My partner also showed me a nifty color palette tool called "Cooler" that I find worked really well for version 1.
+
 
 
 ## The Plan
@@ -29,15 +40,15 @@ We will design an online magazine by dogs for dogs.
 * access computer with internet connection and a browser
 * go to github.com and search "thatcat13"
 * browse thatcat13's repositories to find 'product' repository
-* click on 'product' repository and copy URL link that directs to this specific repository
+* click on 'doge-site-v2' repository and copy URL link that directs to this specific repository
 * access computer terminal and make sure you are at the top directory
 * in terminal, after $ prompt, type in: git clone {-don't type the following, just do the following: paste URL into terminal after git clone-} then hit enter
-* complete 'product' repository should be available at top directory (although desktop is suggested)
+* complete 'doge-site-v2' repository should be available at top directory (although desktop is suggested)
 * browse folder of repository to find 'index.html'; drag file directly into browser OR in browser click file open and access 'index.html'
 
 
 * or access gh-pages assigned to this project:
-* thatcat13.github.io/product
+* thatcat13.github.io/doge-site-v2
 
 ## Support and Contact Details
 * For any questions please reach out to any of our team members below. Here are email and GitHub account details for each:
@@ -46,13 +57,14 @@ We will design an online magazine by dogs for dogs.
 
 
 ## Technologies Used
+* SASS
 * CSS
 * HTML
 
 
 ### License
 * Font Awesome: License: SIL OFL 1.1
-* Pixabay: CC0 1.0 Universal (CC0 1.0)
 
 
-Copyright (c) 2017 **Nathan Barrett** & **Cat Janowitz**
+
+Copyright (c) 2017 **Cat Janowitz**
