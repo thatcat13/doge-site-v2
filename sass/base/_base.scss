@@ -34,6 +34,7 @@ body, html {
   min-height: 100vh;
   min-width: 600px;
   object-fit: cover;
+  z-index: -1;
 
 
   /* Set up proportionate scaling */

@@ -1,0 +1,29 @@
+.main-content1 {
+  position: relative;
+  h4 {
+  border-top: 5px solid $color-lavgrey;
+  text-align: right;
+  position: absolute;
+  width: 100%;
+  right: 12%;
+  top: -10%;
+    p {
+      padding: 20px;
+    }
+  }
+}
+
+.main-content2 {
+  position: relative;
+  h4 {
+  border-top: 5px solid $color-lavgrey;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  right: -12%;
+  top: -10%;
+    p {
+      padding: 20px;
+    }
+  }
+}

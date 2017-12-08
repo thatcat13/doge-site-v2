@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px) {
+  .card-3, .card-4, .card-5, .card-6, .card-7 {
+    @include grid(2, 5%);
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .gallery .container{
+    display: flex;
+    overflow: visible;
+  }
+  .card-3, .card-4, .card-5, .card-6, .card-7 {
+    @include grid(3, 5%);
+    overflow: visible;
+    img {
+      min-height: 250px;
+      object-fit: cover;
+
+      &:hover {
+      transform: scale(1.1);
+      transition: ease-in-out .75s;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .card-3, .card-4, .card-5, .card-6, .card-7 {
+    @include grid(4, 5%);
+    overflow: visible;
+    img {
+      min-height: 350px;
+    }
+  }
+}
