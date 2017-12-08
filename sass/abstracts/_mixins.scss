@@ -1,0 +1,10 @@
+//NetNinja's SASS-made flex grid
+@mixin grid($col, $mgn) {
+  float: left;
+  margin-right: $mgn;
+  margin-bottom: $mgn;
+  width: ((100% - (($col - 1) * $mgn)) / $col);
+  &:nth-child(#{$col}n){
+    margin-right: 0;
+  }
+}
