@@ -1,0 +1,47 @@
+body, html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.wrapper, .row, .hero, .nav, .footer, .intro, .gallery, .container {
+  @extend %clearfix;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+//background-img
+#background-img {
+  opacity: 0.4;
+  min-height: 100vh;
+  min-width: 600px;
+  object-fit: cover;
+
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+/* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}

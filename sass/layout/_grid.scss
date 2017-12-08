@@ -1,0 +1,44 @@
+
+
+[class*='col-'] {
+    float: left;
+    padding: 1em;
+    // min-height: 1px;
+}
+
+//small and above grid
+@for $i from 1 through $grid-columns {
+    .col-#{$i}{
+      width: 100% / $grid-columns * $i;
+    }
+    .offset-#{$i} {
+    margin-left: 100% / $grid-columns * $i;
+    }
+}
+
+// @media #{$breakpoint-medium} {
+//   .wrapper {
+//     width: 100%;
+//     max-width: $grid-max-width;
+//   }
+  @for $i from 1 through $grid-columns {
+      .col-md-#{$i}{
+        width: 100% / $grid-columns * $i;
+      }
+      .offset-md-#{$i} {
+        margin-left: 100% / $grid-columns * $i;
+      }
+  }
+
+
+@media #{$breakpoint-large} {
+  @for $i from 1 through $grid-columns {
+      .col-lg-#{$i}{
+        width: 100% / $grid-columns * $i;
+      }
+
+      .offset-lg-#{$i} {
+        margin-left: 100% / $grid-columns * $i;
+      }
+  }
+}

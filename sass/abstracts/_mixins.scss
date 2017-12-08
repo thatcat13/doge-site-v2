@@ -8,3 +8,21 @@
     margin-right: 0;
   }
 }
+
+//card mixin
+@mixin card {
+  border: $card-border;
+  box-shadow: $card-box-shadow;
+  text-align: $card-text-align;
+  padding: $card-padding-sm;
+  // height: $card-height;
+  margin-top: $card-margin-top;
+}
+
+//border-radius mixin
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
