@@ -1,0 +1,49 @@
+.footer {
+  color: $color-black;
+  background: $color-lavgrey-fade;
+  text-align: center;
+}
+
+.footer-content {
+  padding-top: 25px;
+
+  & button {
+    border: none;
+    @include border-radius(4px);
+    color: $color-black;
+    font-size: 1em;
+    background: $color-purple;
+    height: 60px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+}
+
+.footer-icons {
+  background: $color-sage;
+  text-align: center;
+  ul {
+  color: $color-black;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+
+  & li {
+    display: inline-flex;
+    padding-left: 0;
+    & i {
+      padding-left: 1em;
+    }
+  }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    padding-top: 10px;
+  }
+  p {
+    font-size: 1.25em;
+  }
+}

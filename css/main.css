@@ -66,8 +66,7 @@ body, html {
 
 img {
   width: auto;
-  max-width: 100%;
-  height: auto !important; }
+  max-width: 100%; }
 
 .equal-height {
   display: flex; }
@@ -75,6 +74,47 @@ img {
 body {
   font-family: 'Spectral SC', serif; }
 
+.footer {
+  color: #090c08;
+  background: rgba(117, 112, 131, 0.6);
+  text-align: center; }
+
+.footer-content {
+  padding-top: 25px; }
+  .footer-content button {
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    color: #090c08;
+    font-size: 1em;
+    background: #474056;
+    height: 60px;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 5%; }
+
+.footer-icons {
+  background: #b9c6ae;
+  text-align: center; }
+  .footer-icons ul {
+    color: #090c08;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0; }
+    .footer-icons ul li {
+      display: inline-flex;
+      padding-left: 0; }
+      .footer-icons ul li i {
+        padding-left: 1em; }
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    padding-top: 10px; }
+
+  p {
+    font-size: 1.25em; } }
 [class*='col-'] {
   float: left;
   padding: 1em; }
@@ -296,12 +336,37 @@ body {
   .offset-lg-12 {
     margin-left: 100%; } }
 section.header {
-  background: rgba(117, 112, 131, 0.4);
+  color: #090c08;
+  background: rgba(117, 112, 131, 0.6);
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0; }
+  section.header img {
+    padding-top: 40px; }
+  section.header h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 0; }
+  section.header h4 {
+    margin-top: 5px; }
+  section.header i {
+    padding: 0 4px; }
 
+@media screen and (min-width: 600px) {
+  .row {
+    overflow: auto;
+    min-height: 150px; }
+
+  .logo {
+    float: left;
+    position: relative;
+    left: 12%; }
+
+  .title {
+    position: absolute;
+    bottom: 87%;
+    left: 50%; } }
 .main-content1 {
   position: relative; }
   .main-content1 h4 {
@@ -315,7 +380,8 @@ section.header {
       padding: 20px; }
 
 .main-content2 {
-  position: relative; }
+  position: relative;
+  margin-top: 50px; }
   .main-content2 h4 {
     border-top: 5px solid #757083;
     text-align: left;
@@ -326,41 +392,66 @@ section.header {
     .main-content2 h4 p {
       padding: 20px; }
 
+@media screen and (min-width: 750px) {
+  .intro-header h4, .main-header h4 {
+    font-size: 1.75em;
+    margin: 0;
+    padding: 1%; } }
+@media screen and (min-width: 900px) {
+  .intro-header h4, .main-header h4 {
+    font-size: 2.25em;
+    margin: 0;
+    padding: 2%; } }
 .card-1 img, .card-2 img {
   -webkit-border-radius: 300px;
   -moz-border-radius: 300px;
   -ms-border-radius: 300px;
   border-radius: 300px;
   margin-top: 5%;
-  border: 5px solid #757083; }
+  border: 5px solid #474056; }
 
-@media screen and (max-width: 767px) {
-  .card-1, .card-2 {
+@media screen and (min-width: 550px) {
+  .card-1 {
     float: left;
     margin-right: 5%;
     margin-bottom: 5%;
-    width: 100%; }
-    .card-1:nth-child(1n), .card-2:nth-child(1n) {
-      margin-right: 0; } }
-@media screen and (min-width: 768px) {
-  .gallery1 .container {
-    display: flex;
-    overflow: visible; }
-
-  .card-1, .card-2 {
-    float: left;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    width: 47.5%; }
-    .card-1:nth-child(2n), .card-2:nth-child(2n) {
+    width: 47.5%;
+    float: right;
+    padding-left: 20px; }
+    .card-1:nth-child(2n) {
       margin-right: 0; }
-    .card-1 img, .card-2 img {
-      min-height: 332px;
-      object-fit: cover; }
-      .card-1 img:hover, .card-2 img:hover {
-        transform: scale(1.1);
-        transition: ease-in-out .75s;
-        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5); } }
+
+  .card2 {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 47.5%;
+    float: left; }
+    .card2:nth-child(2n) {
+      margin-right: 0; } }
+@media screen and (min-width: 600px) {
+  .container-intro {
+    margin-top: 5%; } }
+@media screen and (min-width: 750px) {
+  .card-content h1 {
+    font-size: 1.75em;
+    padding-left: 20px; }
+
+  p {
+    font-size: 1.25em;
+    margin: 0;
+    padding: 3%; } }
+@media screen and (min-width: 900px) {
+  .card-content h1 {
+    font-size: 2.25em; }
+
+  .intro-main p, .main-main p {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5%; }
+
+  .footer-icons {
+    transform: scale(1.5); } }
 @media screen and (min-width: 400px) {
   .card-3, .card-4, .card-5, .card-6, .card-7 {
     float: left;

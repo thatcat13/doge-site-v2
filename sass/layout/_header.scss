@@ -1,7 +1,43 @@
 section.header {
+  color: $color-black;
   background: $color-lavgrey-fade;
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
+
+  img {
+    padding-top: $card-padding-sm;
+  }
+
+  h2 {
+    font-size: $header-font-size-sm;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  h4 {
+      margin-top: 5px;
+    }
+    i {
+      padding: 0 4px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    overflow: auto;
+    min-height: 150px;
+  }
+
+  .logo {
+    float: left;
+    position: relative;
+    left: 12%;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 87%;
+    left: 50%;
+  }
 }
