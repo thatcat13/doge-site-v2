@@ -375,9 +375,9 @@ section.header {
     position: absolute;
     width: 100%;
     right: 12%;
-    top: -10%; }
-    .main-content1 h4 p {
-      padding: 20px; }
+    top: -20%; }
+  .main-content1 .col-12 {
+    padding: 2% 5% 0 0; }
 
 .main-content2 {
   position: relative;
@@ -388,9 +388,9 @@ section.header {
     position: absolute;
     width: 100%;
     right: -12%;
-    top: -10%; }
-    .main-content2 h4 p {
-      padding: 20px; }
+    top: -20%; }
+  .main-content2 .col-12 {
+    padding: 2% 5% 0 0; }
 
 @media screen and (min-width: 750px) {
   .intro-header h4, .main-header h4 {
@@ -402,6 +402,9 @@ section.header {
     font-size: 2.25em;
     margin: 0;
     padding: 2%; } }
+.container-intro {
+  padding-bottom: 12%; }
+
 .card-1 img, .card-2 img {
   -webkit-border-radius: 300px;
   -moz-border-radius: 300px;
@@ -496,11 +499,7 @@ section.header {
       margin-right: 0; }
     .card-3 img, .card-4 img, .card-5 img, .card-6 img, .card-7 img {
       min-height: 350px;
-      object-fit: cover; }
-      .card-3 img:hover, .card-4 img:hover, .card-5 img:hover, .card-6 img:hover, .card-7 img:hover {
-        transform: scale(1.1);
-        transition: ease-in-out .75s;
-        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5); } }
+      object-fit: cover; } }
 @media screen and (min-width: 800px) {
   .card-3, .card-4, .card-5, .card-6, .card-7 {
     float: left;
