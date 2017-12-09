@@ -3,6 +3,12 @@
 .container-intro {
   padding-bottom: 12%;
 }
+
+.hidden {
+  display: none;
+  background: $color-sage;
+  color: $color-black;
+}
 .card-1, .card-2 {
   img {
     @include border-radius(300px);
@@ -16,11 +22,26 @@
     @include grid(2, 5%);
     float: right;
     padding-left: 20px;
+    position: relative; }
+
+  .card-1 img {
+    position: relative;
+  }
+  .hidden {
+    border: solid 1px $color-purple;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: -1%;
+    bottom: 6%;
+    padding: 5px;
+    @include border-radius(40px);
   }
   .card2 {
     @include grid(2, 5%);
     float: left;
   }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -42,7 +63,7 @@
 
 }
 
-@media screen and (min-width: 900px) {
+@media #{$breakpoint-large} {
   .card-content h1 {
     font-size: 2.25em;
   }
