@@ -263,7 +263,7 @@ body {
 .offset-md-12 {
   margin-left: 100%; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
   .col-lg-1 {
     width: 8.3333333333%; }
 
@@ -365,8 +365,10 @@ section.header {
 
   .title {
     position: absolute;
-    bottom: 87%;
-    left: 50%; } }
+    bottom: 78%;
+    left: 58%; }
+    .title h4 {
+      font-size: 1em; } }
 .main-content1 {
   position: relative; }
   .main-content1 h4 {
@@ -392,7 +394,7 @@ section.header {
   .main-content2 .col-12 {
     padding: 2% 5% 0 0; }
 
-@media screen and (min-width: 750px) {
+@media only screen and (min-width: 750px) {
   .intro-header h4, .main-header h4 {
     font-size: 1.75em;
     margin: 0;
@@ -466,7 +468,7 @@ section.header {
     font-size: 1.25em;
     margin: 0;
     padding: 3%; } }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
   .card-content h1 {
     font-size: 2.25em; }
 

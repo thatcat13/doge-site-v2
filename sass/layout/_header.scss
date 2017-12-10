@@ -37,7 +37,11 @@ section.header {
 
   .title {
     position: absolute;
-    bottom: 87%;
-    left: 50%;
+    bottom: 78%;
+    left: 58%;
+
+    & h4 {
+      font-size: 1em;
+    }
   }
 }
